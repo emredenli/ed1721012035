@@ -4,6 +4,7 @@ const anaSayfa = function (req, res, next) {
   res.render('mekanlar-liste',
     {
       'baslik': 'Anasayfa',
+      'footer': 'Emre DENLİ 2020',
       'sayfaBaslik': {
         'siteAd': 'Mekan32',
         'aciklama': '  Isparta Civarında Mekanları Keşfedin :)'
@@ -58,6 +59,7 @@ const anaSayfa = function (req, res, next) {
 const mekanBilgisi = function (req, res, next) {
   res.render('mekan-detay', { 
       'baslik':'Mekan Bilgisi',
+      'footer':'Emre DENLİ 2020',
       'sayfaBaslik':'Starbucks',
       'mekanBilgisi':{
         'ad':'Starbucks',
@@ -111,7 +113,11 @@ const mekanBilgisi = function (req, res, next) {
 }
 
 const yorumEkle = function (req, res, next) {
-  res.render('yorum-ekle', { title: 'Yorum Ekle' });
+  res.render('yorum-ekle', 
+  { title: 'Yorum Ekle',
+  'footer':'Emre DENLİ 2020'
+ });
+  
 }
 
 module.exports = {
